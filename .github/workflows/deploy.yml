@@ -22,8 +22,6 @@ jobs:
         run: yarn install --immutable
 
       - name: Build static site
-        env:
-          BASE_PATH: '/trail-of-death'
         run: |
           yarn build
           touch build/.nojekyll
