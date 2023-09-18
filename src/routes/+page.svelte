@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { base } from '$app/paths';
+
   let start = 2023;
   let year = new Date().getFullYear();
 </script>
@@ -6,7 +8,7 @@
 <div data-layout="app">
   <main data-layout="main">
     <h1>Potawatomi Trail of Death Association</h1>
-    <img src="/logo.gif" alt="silhouette of three people and a bird" />
+    <img src="{base}/logo.gif" alt="silhouette of three people and a bird" />
     <h2>Under Construction</h2>
     <p>
       While we build our new site, a lot of information about the Potawatomi Trail of Death can be
