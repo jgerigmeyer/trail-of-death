@@ -1,0 +1,36 @@
+html,
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+[data-layout~='app'] {
+  display: grid;
+  grid-template:
+    'main' 1fr
+    'footer' auto / 100%;
+  min-height: 100vh;
+}
+
+[data-layout~='main'] {
+  grid-area: main;
+  text-align: center;
+  padding: 1rem;
+}
+
+[data-layout~='footer'] {
+  display: grid;
+  grid-area: footer;
+  padding: 1rem;
+}
